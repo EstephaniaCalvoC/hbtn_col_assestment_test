@@ -1,6 +1,6 @@
 """Test user model"""
 import uuid
-from user.domain.user import User
+from src.user.domain.user import User
 
 
 def test_user_model_init():
@@ -17,7 +17,7 @@ def test_user_model_init():
     assert user.user_id == user_id
     assert user.name == "Alexander"
     assert user.last_name == "Mikelson"
-    assert user.gov_id == "105476984"
+    assert user.gov_id == "115476984"
     assert user.email == "alexander.hamilton@gmail.com"
     assert user.company== "Toyota"
 
@@ -38,7 +38,7 @@ def test_user_model_from_dict():
     assert user.user_id == user_id
     assert user.name == "Alexander"
     assert user.last_name == "Mikelson"
-    assert user.gov_id == "105476984"
+    assert user.gov_id == "115476984"
     assert user.email == "alexander.hamilton@gmail.com"
     assert user.company== "Toyota"
 
