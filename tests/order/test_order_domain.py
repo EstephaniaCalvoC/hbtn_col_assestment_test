@@ -5,8 +5,8 @@ from src.order.domain.order import Order
 
 def gen_dummy():
     user_id = uuid.uuid4()
-    order_date = datetime.datetime()
-    last_payment_date=datetime.datetime()
+    order_date = datetime.datetime.now()
+    last_payment_date= datetime.datetime.now()
 
     shipping_info={
         "address": "Carrera 8 No. 34 - 12",
