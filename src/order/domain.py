@@ -9,8 +9,8 @@ class Order:
     customer_id: int
     customer_name: str
     gov_id: str
-    order_date: datetime.datetime
-    last_payment_date: datetime.datetime
+    order_date: str
+    last_payment_date: str
     order_status: str
     shipping_info: dict
     totals: dict

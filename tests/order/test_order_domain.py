@@ -1,12 +1,12 @@
 """Test Order model"""
 import uuid
 import datetime
-from src.order.domain.order import Order
+from src.order.domain import Order
 
 def gen_dummy():
     user_id = uuid.uuid4()
-    order_date = datetime.datetime.now()
-    last_payment_date= datetime.datetime.now()
+    order_date = str(datetime.datetime.now())
+    last_payment_date= str(datetime.datetime.now())
 
     shipping_info={
         "address": "Carrera 8 No. 34 - 12",

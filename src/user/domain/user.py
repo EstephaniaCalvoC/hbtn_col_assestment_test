@@ -4,7 +4,7 @@ import dataclasses
 
 @dataclasses.dataclass
 class User:
-    user_id: uuid.UUID
+    user_id: str
     name: str
     last_name: str
     gov_id: str

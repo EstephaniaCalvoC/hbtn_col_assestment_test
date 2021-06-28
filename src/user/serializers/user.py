@@ -5,7 +5,7 @@ class UserJsonEncoder(json.JSONEncoder):
     def default(self, obj):
         try:
             to_serialize = {
-                "user_id": str(obj.user_id),
+                "user_id": obj.user_id,
                 "name": obj.name,
                 "last_name": obj.last_name,
                 "gov_id": obj.gov_id,

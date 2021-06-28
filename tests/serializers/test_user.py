@@ -6,7 +6,7 @@ from src.user.domain.user import User
 
 
 def test_serialize_domain_user():
-    user_id = uuid.uuid4()
+    user_id = str(uuid.uuid4())
     user = User(
         user_id,
         name="Alexander",

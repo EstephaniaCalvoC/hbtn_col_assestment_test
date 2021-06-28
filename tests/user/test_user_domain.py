@@ -23,7 +23,7 @@ def test_user_model_init():
 
 
 def test_user_model_from_dict():
-    user_id = uuid.uuid4()
+    user_id = str(uuid.uuid4())
     init_dict = {
         "user_id": user_id,
         "name": "Alexander",
@@ -45,7 +45,7 @@ def test_user_model_from_dict():
 
 def test_user_model_to_dict():
     init_dict = {
-        "user_id": uuid.uuid4(),
+        "user_id": str(uuid.uuid4()),
         "name": "Alexander",
         "last_name": "Mikelson",
         "gov_id": "115476984",
@@ -59,7 +59,7 @@ def test_user_model_to_dict():
 
 def test_user_model_comparison():
     init_dict = {
-        "user_id": uuid.uuid4(),
+        "user_id": str(uuid.uuid4()),
         "name": "Alexander",
         "last_name": "Mikelson",
         "gov_id": "115476984",
