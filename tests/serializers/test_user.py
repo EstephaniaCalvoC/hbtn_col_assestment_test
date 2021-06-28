@@ -27,6 +27,6 @@ def test_serialize_domain_user():
         }}
     """
 
-    json_room = json.dumps(room, cls=UserJsonEncoder)
+    json_user = json.dumps(user, cls=UserJsonEncoder)
 
-    assert json.loads(json_room) == json.loads(expected_json)
+    assert json.loads(json_user) == json.loads(expected_json)
