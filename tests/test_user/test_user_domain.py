@@ -1,10 +1,10 @@
 """Test user model"""
 import uuid
-from src.user.domain.user import User
+from src.user.domain import User
 
 
 def test_user_model_init():
-    user_id = uuid.uuid4()
+    user_id = str(uuid.uuid4())
     user = User(
         user_id,
         name="Alexander",

@@ -1,8 +1,9 @@
+"""Test user serializer"""
 import json
 import uuid
 
-from src.user.serializers.user import UserJsonEncoder
-from src.user.domain.user import User
+from src.user.serializer import UserJsonEncoder
+from src.user.domain import User
 
 
 def test_serialize_domain_user():

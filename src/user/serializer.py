@@ -1,8 +1,8 @@
-"""Define the Order serializer"""
+"""Define the User serializer"""
 import json
 
 
-class OrderJsonEncoder(json.JSONEncoder):
+class UserJsonEncoder(json.JSONEncoder):
     def default(self, obj):
         try:
             return obj.to_dict()
